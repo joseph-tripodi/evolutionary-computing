@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MutatorTest {
-
+class BinaryBitFlipString {
     /**
      * Tests that the binaryBitFlip can mutate a string presentation
      * Uses probability 1.0 to ensure we can have an expected result
