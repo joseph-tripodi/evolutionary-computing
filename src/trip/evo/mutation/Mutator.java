@@ -7,6 +7,7 @@ import java.util.Random;
  */
 public class Mutator {
     public static Random random = new Random(System.nanoTime());
+
     /**
      * Mutates a binary string genome
      * @param genome genome representation as a string
@@ -15,10 +16,10 @@ public class Mutator {
      */
     public static String binaryBitFlip(String genome, double pm){
         StringBuilder mutatedGenome = new StringBuilder();
-        double r = random.nextDouble();
 
         // Loop through each character (gene) and flip if r <= pm
         for(char gene : genome.toCharArray()){
+            double r = random.nextDouble();
             if(r <= pm){
                 switch (gene){
                     case '1':
